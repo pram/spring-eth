@@ -19,3 +19,5 @@ Now add [web3j](https://github.com/web3j/web3j-spring-boot-starter) as a depende
         <artifactId>web3j-spring-boot-starter</artifactId>
         <version>1.5.0</version>
     </dependency>
+    
+Running the application and navigating to [clientversion](http://localhost:8080/clientversion) should now display client version details
