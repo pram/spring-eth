@@ -30,4 +30,14 @@ Running the application and navigating to [clientversion](http://localhost:8080/
 
 Go to [remix](https://remix.ethereum.org/). Paste the [following](https://gist.github.com/pram/1ac3254417a7662734d8b4683c1782e3) into the editor.
 
-Follow the [guide](https://medium.com/crypto-currently/build-your-first-smart-contract-fc36a8ff50ca) for more details on how to deploy a smart contract. 
+Follow the [guide](https://medium.com/crypto-currently/build-your-first-smart-contract-fc36a8ff50ca) for more details on how to deploy a smart contract.
+
+Navigate to 
+
+    src/main/solidity
+
+and run the following command
+
+    solcjs counter.sol --bin --abi --optimize -o target/
+    
+You should now have two files in the target directory - `counter_sol_Counter.abi` and `counter_sol_Counter.bin`
