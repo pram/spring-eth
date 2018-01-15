@@ -41,3 +41,9 @@ and run the following command
     solcjs counter.sol --bin --abi --optimize -o target/
     
 You should now have two files in the target directory - `counter_sol_Counter.abi` and `counter_sol_Counter.bin`
+
+After having installed [web3j command line tools](https://github.com/web3j/web3j/releases)
+
+Then run the wrapper generation command
+
+    web3j solidity generate /path/to/counter_sol_Counter.bin /path/to/counter_sol_Counter.abi -o /path/to/src/main/java -p com.naughtyzombie.eth.springeth.wrapper
